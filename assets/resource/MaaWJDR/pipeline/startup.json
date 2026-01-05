@@ -3,13 +3,10 @@
         "post_wait_freezes": 300,
         "timeout": 60000,
         "next": [
-            "开始切换角色"
-        ],
-        "interrupt": [
-            "后退",
-            "关闭礼包",
-            "关闭离线收益"
-            
+            "开始切换角色",
+            "[JumpBack]后退",
+            "[JumpBack]关闭礼包",
+            "[JumpBack]关闭离线收益"
         ]
     },
     "主界面标志": {
