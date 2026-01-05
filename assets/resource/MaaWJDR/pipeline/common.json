@@ -1,0 +1,96 @@
+{
+    "关闭离线收益": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "关闭离线收益.png",
+                "roi": [
+                    595,
+                    181,
+                    125,
+                    142
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    645,
+                    231,
+                    35,
+                    42
+                ]
+            }
+        },
+        "post_delay": 200
+    },
+    "关闭礼包":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "./关闭礼包",
+                "roi": [
+                    422,
+                    4,
+                    297,
+                    447
+                ],
+                "green_mask": true
+            }
+        },
+        "action": "Click",
+        "post_delay": 200
+    },    
+    "后退": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "后退.png",
+                "roi": [
+                    0,
+                    0,
+                    177,
+                    165
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    7,
+                    11,
+                    77,
+                    65
+                ]
+            }
+        },
+        "post_delay": 200
+    },
+    "转到城外": {
+        "recognition": "OCR",
+        "expected": [
+            "野外"
+        ],
+        "roi": [
+            566,
+            1188,
+            154,
+            92
+        ],
+        "action": "Click",
+        "post_wait_freezes": 2000
+    },
+    "点击左上角":{
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    0,0,2,2
+                ]
+            }
+        }
+    }
+
+}
